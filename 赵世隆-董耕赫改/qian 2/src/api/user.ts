@@ -1,0 +1,145 @@
+import request from '@/utils/request'
+import axios from 'axios'
+
+// 登录方法
+export function loginApi(data: any) {
+  return request({
+    url: '/login',
+    headers: {
+      isToken: false,
+      repeatSubmit: false
+    },
+    method: 'post',
+    data
+  })
+}
+
+// 注册方法
+export function registerApi(data: any) {
+  return request({
+    url: '/register',
+    headers: {
+      isToken: false
+    },
+    method: 'post',
+    data: data
+  })
+}
+
+// 获取当前用户信息和登录状态
+export function loadMyself() {
+  let id = sessionStorage.getItem('id');
+  console.log('loadMyself API: 发送请求，用户ID:', id);
+  return request({
+    url: '/user/findUserById?id=' + id,
+    method: 'get'
+  });
+}
+
+// 获取用户详细信息
+export function getInfo() {
+  return request({
+    url: '/getInfo',
+    method: 'get'
+  })
+}
+
+// 修改用户个人信息
+export function updateUserProfile(data: any) {
+  return request({
+    url: '/system/user/profile',
+    method: 'put',
+    data
+  })
+}
+
+// 用户密码重置
+export function updateUserPwd(oldPassword: any, newPassword: any) {
+  const data = {
+    oldPassword,
+    newPassword
+  }
+  return request({
+    url: '/system/user/profile/updatePwd',
+    method: 'put',
+    data
+  })
+}
+
+// 检查登录状态的工具函数
+export async function checkLoginStatus(): Promise<{isLogin: boolean, userInfo?: any}> {
+  try {
+    const response: any = await loadMyself()
+    return {
+      isLogin: response.isOk || false,
+      userInfo: response.isOk ? response.user : null
+    }
+  } catch (error) {
+    console.error('检查登录状态失败:', error)
+    return {
+      isLogin: false,
+      userInfo: null
+    }
+  }
+}
+
+export function getTaskList() {
+  return request({
+    url: '/course/publishList',
+    method: 'get'
+  });
+}
+
+export function getUserList(params?: any) {
+  return request({
+    url: '/user/list',
+    method: 'get',
+    params: params
+  });
+}
+
+// 搜索用户
+export function searchUsers(data: any) {
+  return request({
+    url: '/user/search',
+    method: 'post',
+    data: data
+  });
+}
+
+// 根据部门ID搜索用户
+export function searchUsersByDepartment(departmentId: number) {
+  const formData = new FormData();
+  formData.append('secId', departmentId.toString());
+  return request({
+    url: '/user/search1',
+    method: 'post',
+    data: formData,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  });
+}
+
+// 根据公司名搜索用户
+export function searchUsersByCompany(companyName: string) {
+  const formData = new FormData();
+  formData.append('companyName', companyName);
+  return request({
+    url: '/user/searchuserbycompany',
+    method: 'post',
+    data: formData,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  });
+}
+
+// 更新用户状态
+export function updateUserState(data: any) {
+  return request({
+    url: '/user/updateState',
+    method: 'post',
+    data: data
+  });
+}
