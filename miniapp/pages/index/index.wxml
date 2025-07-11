@@ -1,0 +1,63 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <!-- 轮播图区域 -->
+  <view class="banner-section">
+    <swiper 
+      class="swiper-container" 
+      indicator-dots="true" 
+      autoplay="true" 
+      interval="3000" 
+      duration="500"
+      bindchange="onSwiperChange">
+      <swiper-item 
+        wx:for="{{bannerList}}" 
+        wx:key="id" 
+        class="swiper-item"
+        bindtap="onBannerTap"
+        data-index="{{index}}">
+        <image 
+          src="{{item.image}}" 
+          class="swiper-image" 
+          mode="widthFix"
+          lazy-load="true">
+        </image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 页面内容 -->
+  <view class="page-content">
+    <!-- 关于测盟汇 -->
+    <view class="introduction-section">
+      <view class="section-title">{{introduction.title}}</view>
+      <view class="card">
+        <view class="introduction-content">
+          {{introduction.content}}
+        </view>
+      </view>
+    </view>
+
+    <!-- 同盟会员单位 -->
+    <view class="members-section">
+      <view class="section-title">同盟会员单位</view>
+      <view class="members-grid">
+        <view 
+          wx:for="{{memberUnits}}" 
+          wx:key="id" 
+          class="member-item"
+          bindtap="onMemberTap"
+          data-index="{{index}}">
+          <view class="member-logo">
+            <image 
+              src="{{item.logo}}" 
+              class="member-image" 
+              mode="aspectFit"
+              lazy-load="true">
+            </image>
+          </view>
+          <view class="member-name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> 

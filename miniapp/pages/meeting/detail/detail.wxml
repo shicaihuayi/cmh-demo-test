@@ -1,0 +1,62 @@
+<!--pages/meeting/detail/detail.wxml-->
+<view class="page">
+  <!-- 会议详情内容 -->
+  <view class="content" wx:if="{{!isLoading && !errorMessage}}">
+    <!-- 会议名称 -->
+    <view class="section">
+      <view class="title">{{meeting.name}}</view>
+    </view>
+
+    <!-- 会议时间 -->
+    <view class="section">
+      <view class="label">时间</view>
+      <view class="info">
+        <text>{{meeting.startTime}}</text>
+        <text wx:if="{{meeting.endTime && meeting.endTime !== meeting.startTime}}"> - {{meeting.endTime}}</text>
+      </view>
+    </view>
+
+    <!-- 会议地点 -->
+    <view class="section">
+      <view class="label">地点</view>
+      <view class="info">{{meeting.location}}</view>
+    </view>
+
+    <!-- 主办单位 -->
+    <view class="section">
+      <view class="label">主办单位</view>
+      <view class="info">{{meeting.organizer}}</view>
+    </view>
+
+    <!-- 会议议程 -->
+    <view class="section" wx:if="{{meeting.agenda}}">
+      <view class="label">议程</view>
+      <view class="info agenda">
+        <text>{{meeting.agenda}}</text>
+      </view>
+    </view>
+
+    <!-- 嘉宾介绍 -->
+    <view class="section" wx:if="{{meeting.guests}}">
+      <view class="label">嘉宾介绍</view>
+      <view class="info guests">
+        <text>{{meeting.guests}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 加载中提示 -->
+  <view class="loading" wx:if="{{isLoading}}">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 错误提示 -->
+  <view class="error" wx:if="{{errorMessage}}">
+    <text>{{errorMessage}}</text>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="footer" wx:if="{{!isLoading && !errorMessage}}">
+    <button class="submit-btn" bindtap="navigateToReceipt">填写参会回执</button>
+  </view>
+</view> 

@@ -1,0 +1,59 @@
+<!--pages/profile/profile.wxml-->
+<view class="page">
+  <!-- 未登录状态 -->
+  <block wx:if="{{!isLoggedIn}}">
+    <view class="profile-header not-logged-in" bindtap="goToLogin">
+      <image class="avatar" src="{{defaultAvatar}}" binderror="onAvatarError"></image>
+      <text class="login-prompt">点击登录/注册</text>
+    </view>
+    <view class="quick-login">
+      <button class="wechat-login-btn" bindtap="quickLogin">
+        <text>微信快速登录</text>
+      </button>
+    </view>
+    <view class="menu-list">
+       <view class="menu-item" bindtap="goToFeedback">
+        <text>意见反馈</text>
+        <text class="arrow">></text>
+      </view>
+       <view class="menu-item" bindtap="goToUserAgreement">
+        <text>用户协议</text>
+        <text class="arrow">></text>
+      </view>
+       <view class="menu-item" bindtap="goToPrivacyPolicy">
+        <text>隐私政策</text>
+        <text class="arrow">></text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 已登录状态 -->
+  <block wx:else>
+    <view class="profile-header" bindtap="goToInfo">
+      <image class="avatar" src="{{userInfo.imageUrl || defaultAvatar}}" binderror="onAvatarError"></image>
+      <text class="nickname">{{userInfo.nickname || '未设置昵称'}}</text>
+      <text class="phone">{{userInfo.phone || ''}}</text>
+    </view>
+    <view class="menu-list">
+      <view class="menu-item" bindtap="goToMyCourses">
+        <text>我的课程</text>
+        <text class="arrow">></text>
+      </view>
+      <view class="menu-item" bindtap="goToInfo">
+        <text>个人信息管理</text>
+        <text class="arrow">></text>
+      </view>
+      <view class="menu-item" bindtap="goToPassword">
+        <text>修改密码</text>
+        <text class="arrow">></text>
+      </view>
+      <view class="menu-item" bindtap="goToFeedback">
+        <text>意见反馈</text>
+        <text class="arrow">></text>
+      </view>
+    </view>
+    <view class="logout-wrapper">
+      <button class="logout-btn" bindtap="logout">退出登录</button>
+    </view>
+  </block>
+</view> 

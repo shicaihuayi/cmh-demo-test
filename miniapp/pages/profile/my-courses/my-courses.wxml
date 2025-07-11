@@ -1,0 +1,23 @@
+<!--pages/profile/my-courses/my-courses.wxml-->
+<view class="page">
+  <view wx:if="{{isLoading}}" class="loading-container">
+    <text>加载中...</text>
+  </view>
+
+  <view wx:elif="{{courseList.length > 0}}" class="course-list">
+    <view class="course-item" wx:for="{{courseList}}" wx:key="id" data-id="{{item.courseId}}" bindtap="continueLearning">
+      <image class="course-cover" src="{{item.processedCoverUrl}}" mode="aspectFill"></image>
+      <view class="course-info">
+        <view class="title">{{item.courseName}}</view>
+        <view class="author">主讲：{{item.author}}</view>
+        <view class="enroll-time">报名时间：{{item.formattedEnrollTime}}</view>
+        <button class="learn-btn" catchtap="continueLearning" data-id="{{item.courseId}}">继续学习</button>
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class="empty-container">
+    <image class="empty-icon" src="/static/images/empty-icon.png"></image>
+    <text class="empty-text">您还没有报名任何课程哦</text>
+  </view>
+</view> 

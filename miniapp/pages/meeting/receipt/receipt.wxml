@@ -1,0 +1,67 @@
+<!--pages/meeting/receipt/receipt.wxml-->
+<view class="page">
+  <scroll-view class="page-content" scroll-y="true">
+    <!-- 用户信息加载提示 -->
+    <view class="loading-tip" wx:if="{{isLoadingUserInfo}}">
+      <text class="loading-text">正在加载用户信息...</text>
+    </view>
+    
+    <view class="form-group">
+      <view class="form-item">
+        <text class="label">单位</text>
+        <input class="input" placeholder="请输入您的单位名称" value="{{form.company}}" data-field="company" bindinput="onInputChange" />
+      </view>
+      <view class="form-item">
+        <text class="label">姓名</text>
+        <input class="input" placeholder="请输入您的姓名" value="{{form.name}}" data-field="name" bindinput="onInputChange" />
+      </view>
+      <view class="form-item">
+        <text class="label">性别</text>
+        <radio-group class="radio-group" bindchange="onGenderChange">
+          <label class="radio">
+            <radio value="male" checked="{{form.gender === 'male'}}"/>男
+          </label>
+          <label class="radio">
+            <radio value="female" checked="{{form.gender === 'female'}}"/>女
+          </label>
+        </radio-group>
+      </view>
+      <view class="form-item">
+        <text class="label">手机号码</text>
+        <input class="input" type="number" placeholder="请输入您的联系电话" value="{{form.phone}}" data-field="phone" bindinput="onInputChange" />
+      </view>
+      <view class="form-item">
+        <text class="label">电子邮箱</text>
+        <input class="input" placeholder="请输入您的电子邮箱" value="{{form.email}}" data-field="email" bindinput="onInputChange" />
+      </view>
+    </view>
+    <view class="form-group">
+      <picker bindchange="onArrivalMethodChange" value="{{form.arrivalMethod}}" range="{{arrivalMethods}}">
+        <view class="form-item">
+          <text class="label">到达方式</text>
+          <view class="picker">
+            {{form.arrivalMethod || '请选择到达方式'}}
+            <view class="arrow"></view>
+          </view>
+        </view>
+      </picker>
+      <view class="form-item">
+        <text class="label">到达车次</text>
+        <input class="input" placeholder="如需，请输入车次/航班号" value="{{form.arrivalFlightOrTrain}}" data-field="arrivalFlightOrTrain" bindinput="onInputChange" />
+      </view>
+      <picker mode="time" value="{{form.arrivalTime}}" start="00:00" end="23:59" bindchange="onArrivalTimeChange">
+        <view class="form-item">
+          <text class="label">到达时间</text>
+          <view class="picker">
+            {{form.arrivalTime || '请选择到达时间'}}
+            <view class="arrow"></view>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </scroll-view>
+  
+  <view class="bottom-bar">
+    <button class="action-button" type="primary" bindtap="submitForm">提 交</button>
+  </view>
+</view>

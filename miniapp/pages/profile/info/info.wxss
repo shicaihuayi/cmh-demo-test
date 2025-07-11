@@ -1,0 +1,160 @@
+/* pages/profile/info/info.wxss */
+.page-container {
+  padding: 30rpx;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.form-section {
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+  min-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.form-item:last-child {
+  border-bottom: none;
+}
+
+.form-label, .label {
+  width: 160rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #666;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.form-control input {
+  text-align: right;
+  width: 100%;
+}
+
+.avatar-item .form-control {
+  cursor: pointer;
+}
+
+.avatar-preview {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #eee;
+  margin-right: 20rpx;
+}
+
+.arrow {
+  color: #ccc;
+  font-size: 36rpx;
+}
+
+.save-button-container {
+  padding: 30rpx;
+}
+
+.save-button {
+  background-color: #1AAD19;
+  color: #fff;
+  border-radius: 48rpx;
+  font-size: 34rpx;
+}
+
+.gender-picker {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+/* 表单项 */
+.form-item {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  margin-bottom: 2rpx;
+  font-size: 30rpx;
+}
+
+.form-item:first-child {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.form-item:last-of-type {
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  margin-bottom: 40rpx;
+}
+
+.label {
+  color: #333;
+  font-weight: bold;
+  min-width: 120rpx;
+}
+
+/* 头像相关 */
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  border: 1rpx solid #eee;
+}
+
+/* 值显示 */
+.value-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 2rpx;
+}
+
+.value {
+  font-size: 30rpx;
+  color: #666;
+  margin-right: 10rpx;
+}
+
+.value.readonly {
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 保存按钮 */
+.save-btn {
+  width: 100%;
+  height: 90rpx;
+  background-color: #007bff;
+  color: white;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  border: none;
+  margin-top: 40rpx;
+}
+
+.save-btn:active {
+  background-color: #0056b3;
+} 

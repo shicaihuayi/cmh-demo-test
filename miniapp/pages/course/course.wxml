@@ -1,0 +1,53 @@
+<!--pages/course/course.wxml-->
+<view class="page">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <icon class="search-icon" type="search" size="16"></icon>
+    <input 
+      class="search-input" 
+      placeholder="请输入课程名称或作者" 
+      value="{{searchKeyword}}"
+      bindinput="onSearchInput"
+      bindconfirm="onSearchConfirm"
+    />
+  </view>
+
+  <!-- 排序选项 -->
+  <view class="sort-bar">
+    <picker mode="selector" range="{{popularityLevels}}" bindchange="onPopularityChange">
+      <view class="sort-option active">
+        {{popularityLevels[selectedPopularityIndex]}}
+        <text class="dropdown-arrow">▼</text>
+      </view>
+    </picker>
+  </view>
+
+  <!-- 课程卡片网格 -->
+  <view class="course-grid">
+    <view 
+      class="course-card" 
+      wx:for="{{courseList}}" 
+      wx:key="id" 
+      data-id="{{item.id}}"
+      bindtap="navigateToDetail"
+    >
+      <image class="card-image" src="{{item.coverUrl}}" mode="aspectFill"></image>
+      <view class="card-content">
+        <view class="title">{{item.name}}</view>
+        <view class="author">{{item.author}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 加载状态和空状态提示 -->
+  <view wx:if="{{isLoading}}" class="loading">加载中...</view>
+  <view wx:elif="{{courseList.length === 0}}" class="empty">暂无课程数据</view>
+
+  <!-- 加载状态 -->
+  <view wx:if="{{!hasMore && courseList.length > 0}}" class="loading-footer">
+    <text>没有更多数据了</text>
+  </view>
+  
+  <!-- 错误提示 -->
+  <view wx:if="{{errorMessage}}" class="error-message">{{errorMessage}}</view>
+</view> 

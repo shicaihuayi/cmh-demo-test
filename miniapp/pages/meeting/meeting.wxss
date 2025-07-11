@@ -1,0 +1,128 @@
+/* pages/meeting/meeting.wxss */
+@import "../../app.wxss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 搜索栏 */
+.search-bar {
+  padding: 16rpx 24rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 24rpx;
+  height: 68rpx;
+  background-color: #f5f5f5;
+  border-radius: 34rpx;
+  box-sizing: border-box;
+}
+.search-icon {
+  margin-right: 10rpx;
+}
+.search-input {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 分类Tabs */
+.category-tabs {
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+  white-space: nowrap;
+  padding: 0 10rpx;
+}
+.tab-item {
+  display: inline-block;
+  padding: 24rpx 20rpx;
+  font-size: 27rpx;
+  color: #555;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.tab-item.active {
+  color: #007aff;
+  font-weight: bold;
+}
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 10rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50rpx;
+  height: 6rpx;
+  background-color: #007aff;
+  border-radius: 3rpx;
+}
+
+/* 内容列表 */
+.content-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20rpx;
+}
+.list-item {
+  position: relative;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+.item-cover {
+  width: 100%;
+  height: 300rpx;
+  background-color: #f0f0f0;
+}
+.item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20rpx;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+.item-title {
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 2rpx 4rpx rgba(0,0,0,0.3);
+  margin: 0;
+  padding: 10rpx 0;
+}
+.item-arrow {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  color: #fff;
+  font-size: 40rpx;
+}
+
+/* 状态提示 */
+.loading, .empty, .error-message {
+  text-align: center;
+  padding: 30rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.error-message {
+  color: #ff4d4f;
+}
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300rpx;
+  color: #999;
+  font-size: 28rpx;
+  width: 100%;
+} 

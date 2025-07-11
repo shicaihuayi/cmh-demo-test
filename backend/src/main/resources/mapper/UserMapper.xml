@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lfx.demo.mapper.UserMapper">
+    <select id="selectUsersByConditions" resultType="com.lfx.demo.entity.User">
+        SELECT * FROM t_user
+        <where>
+            <if test="name != null and name != ''">
+                AND name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            <if test="companyName != null and companyName != ''">
+                AND company_name LIKE CONCAT('%', #{companyName}, '%')
+            </if>
+            <if test="startDate != null and startDate != ''">
+                AND time &gt;= #{startDate}
+            </if>
+            <if test="endDate != null and endDate != ''">
+                AND time &lt;= #{endDate}
+            </if>
+        </where>
+    </select>
+
+    <select id="findUserById" resultType="com.lfx.demo.entity.User">
+        SELECT * FROM t_user WHERE id = #{id}
+    </select>
+
+    <update id="updateUserInfo" parameterType="com.lfx.demo.entity.User">
+        UPDATE t_user
+        <set>
+            <if test="nickname != null and nickname != ''">
+                nickname = #{nickname},
+            </if>
+            <if test="tel != null and tel != ''">
+                tel = #{tel},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex},
+            </if>
+            <if test="imageUrl != null and imageUrl != ''">
+                imageUrl = #{imageUrl},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+</mapper> 

@@ -1,0 +1,74 @@
+<!--pages/profile/user-agreement/user-agreement.wxml-->
+<view class="page">
+  <view class="content">
+    <view class="title">测盟汇用户协议</view>
+    
+    <view class="section">
+      <view class="section-title">一、协议的接受和修改</view>
+      <text class="section-content">
+        1.1 本协议是用户与测盟汇平台之间关于使用测盟汇服务的法律协议。\n
+        1.2 测盟汇有权根据需要修改本协议条款，修改后的协议将在平台上公布。\n
+        1.3 用户继续使用服务即表示接受修改后的协议。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">二、用户注册和账户</view>
+      <text class="section-content">
+        2.1 用户需要提供真实、准确、完整的个人信息进行注册。\n
+        2.2 用户应当妥善保管账户信息，对账户下的所有活动承担责任。\n
+        2.3 发现账户被非法使用时，应立即通知测盟汇平台。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">三、服务内容</view>
+      <text class="section-content">
+        3.1 测盟汇为用户提供软件测试相关的学习、交流、会议等服务。\n
+        3.2 平台提供的内容仅供学习和参考，不构成专业建议。\n
+        3.3 用户应合理使用平台资源，不得恶意占用系统资源。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">四、用户行为规范</view>
+      <text class="section-content">
+        4.1 用户不得发布违法、有害、威胁、辱骂等不当内容。\n
+        4.2 不得侵犯他人知识产权或其他合法权益。\n
+        4.3 不得进行任何可能危害平台安全的行为。\n
+        4.4 违反规定的用户，平台有权采取限制或终止服务等措施。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">五、知识产权</view>
+      <text class="section-content">
+        5.1 平台上的内容受知识产权法保护。\n
+        5.2 用户仅获得使用权，不得用于商业用途。\n
+        5.3 用户上传的内容应确保不侵犯他人权益。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">六、免责声明</view>
+      <text class="section-content">
+        6.1 平台不对用户使用服务产生的任何直接或间接损失承担责任。\n
+        6.2 因不可抗力导致的服务中断，平台不承担责任。\n
+        6.3 用户应自行承担使用服务的风险。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">七、争议解决</view>
+      <text class="section-content">
+        7.1 本协议适用中华人民共和国法律。\n
+        7.2 因本协议产生的争议，双方应友好协商解决。\n
+        7.3 协商不成的，可向平台所在地人民法院起诉。
+      </text>
+    </view>
+
+    <view class="footer">
+      <text class="update-time">最后更新时间：2024年1月1日</text>
+    </view>
+  </view>
+</view> 

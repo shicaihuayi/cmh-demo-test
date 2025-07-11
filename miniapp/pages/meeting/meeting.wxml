@@ -1,0 +1,57 @@
+<!--pages/meeting/meeting.wxml-->
+<view class="page">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <view class="search-wrapper">
+      <icon class="search-icon" type="search" size="16"></icon>
+      <input class="search-input" 
+             placeholder="请输入会议名称或创建人" 
+             value="{{searchKeyword}}" 
+             bindinput="onSearchInput"
+             confirm-type="search"
+             bindconfirm="onSearchConfirm" />
+    </view>
+  </view>
+
+  <!-- 分类Tabs -->
+  <scroll-view class="category-tabs" scroll-x="true" scroll-with-animation="true">
+    <view 
+      wx:for="{{meetingTypes}}" 
+      wx:key="index" 
+      class="tab-item {{activeType === index ? 'active' : ''}}" 
+      data-index="{{index}}" 
+      bindtap="onTypeChange">
+      {{item.label}}
+    </view>
+  </scroll-view>
+
+  <!-- 内容列表 -->
+  <view class="content-list">
+    <!-- 公益行动的分类在 meetingTypes 的索引是 5 -->
+    <block wx:if="{{activeType !== 5}}">
+      <view class="list-item" 
+            wx:for="{{meetingList}}" 
+            wx:key="conferName" 
+            data-confer-name="{{item.conferName}}"
+            bindtap="navigateToDetail">
+        <image class="item-cover" src="{{item.cover}}" mode="aspectFill"></image>
+        <view class="item-content">
+          <view class="item-title">{{item.conferName}}</view>
+        </view>
+        <view class="item-arrow">›</view>
+      </view>
+      
+      <!-- 加载状态和空状态提示 -->
+      <view wx:if="{{isLoading}}" class="loading">加载中...</view>
+      <view wx:elif="{{meetingList.length === 0}}" class="empty">该分类下暂无内容</view>
+    </block>
+    
+    <!-- 公益行动的占位符 -->
+    <block wx:else>
+      <view class="placeholder">公益行动功能开发中</view>
+    </block>
+  </view>
+
+  <!-- 错误提示 -->
+  <view wx:if="{{errorMessage}}" class="error-message">{{errorMessage}}</view>
+</view> 

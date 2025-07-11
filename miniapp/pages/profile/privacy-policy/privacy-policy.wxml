@@ -1,0 +1,98 @@
+<!--pages/profile/privacy-policy/privacy-policy.wxml-->
+<view class="page">
+  <view class="content">
+    <view class="title">测盟汇隐私政策</view>
+    
+    <view class="section">
+      <view class="section-title">一、信息收集</view>
+      <text class="section-content">
+        1.1 我们收集您主动提供的信息，包括注册信息、个人资料等。\n
+        1.2 自动收集的信息包括设备信息、日志信息、位置信息等。\n
+        1.3 通过Cookie等技术收集的使用偏好和行为数据。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">二、信息使用</view>
+      <text class="section-content">
+        2.1 为您提供、维护和改进我们的服务。\n
+        2.2 处理您的请求和交易。\n
+        2.3 发送服务相关的通知和更新。\n
+        2.4 进行数据分析以改善用户体验。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">三、信息分享</view>
+      <text class="section-content">
+        3.1 我们不会出售、租赁或交易您的个人信息。\n
+        3.2 在以下情况下可能分享信息：\n
+        - 获得您的明确同意\n
+        - 法律法规要求\n
+        - 保护用户和公众安全\n
+        - 与可信的第三方服务提供商合作
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">四、信息安全</view>
+      <text class="section-content">
+        4.1 我们采用行业标准的安全措施保护您的信息。\n
+        4.2 使用加密技术保护数据传输和存储。\n
+        4.3 限制员工访问个人信息的权限。\n
+        4.4 定期进行安全审计和漏洞检测。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">五、您的权利</view>
+      <text class="section-content">
+        5.1 您有权访问、更正、删除您的个人信息。\n
+        5.2 您可以选择不接收营销邮件。\n
+        5.3 您可以要求限制或反对某些信息处理。\n
+        5.4 您有权获得数据可携带性。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">六、Cookie政策</view>
+      <text class="section-content">
+        6.1 我们使用Cookie改善用户体验。\n
+        6.2 您可以通过浏览器设置管理Cookie。\n
+        6.3 禁用Cookie可能影响某些功能的使用。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">七、儿童隐私</view>
+      <text class="section-content">
+        7.1 我们不会故意收集13岁以下儿童的个人信息。\n
+        7.2 如发现收集了儿童信息，我们将立即删除。\n
+        7.3 建议家长监督儿童的网络活动。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">八、政策更新</view>
+      <text class="section-content">
+        8.1 我们可能会更新本隐私政策。\n
+        8.2 重大变更将通过邮件或平台通知。\n
+        8.3 继续使用服务表示您接受更新后的政策。
+      </text>
+    </view>
+
+    <view class="section">
+      <view class="section-title">九、联系我们</view>
+      <text class="section-content">
+        如果您对本隐私政策有任何疑问，请通过以下方式联系我们：\n
+        邮箱：privacy@cemengui.com\n
+        电话：400-123-4567\n
+        地址：北京市朝阳区测盟汇大厦
+      </text>
+    </view>
+
+    <view class="footer">
+      <text class="update-time">最后更新时间：2024年1月1日</text>
+    </view>
+  </view>
+</view> 

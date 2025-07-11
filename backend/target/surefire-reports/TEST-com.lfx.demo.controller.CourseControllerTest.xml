@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.lfx.demo.controller.CourseControllerTest" time="0.667" tests="23" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou\target\test-classes;E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou\target\classes;D:\Software\repo\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-web\3.3.1\spring-boot-starter-web-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter\3.3.1\spring-boot-starter-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-logging\3.3.1\spring-boot-starter-logging-3.3.1.jar;D:\Software\repo\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;D:\Software\repo\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;D:\Software\repo\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;D:\Software\repo\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;D:\Software\repo\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\Software\repo\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\Software\repo\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-json\3.3.1\spring-boot-starter-json-3.3.1.jar;D:\Software\repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-tomcat\3.3.1\spring-boot-starter-tomcat-3.3.1.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-core\10.1.25\tomcat-embed-core-10.1.25.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-el\10.1.25\tomcat-embed-el-10.1.25.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.25\tomcat-embed-websocket-10.1.25.jar;D:\Software\repo\org\springframework\spring-web\6.1.10\spring-web-6.1.10.jar;D:\Software\repo\org\springframework\spring-beans\6.1.10\spring-beans-6.1.10.jar;D:\Software\repo\io\micrometer\micrometer-observation\1.13.1\micrometer-observation-1.13.1.jar;D:\Software\repo\io\micrometer\micrometer-commons\1.13.1\micrometer-commons-1.13.1.jar;D:\Software\repo\org\springframework\spring-webmvc\6.1.10\spring-webmvc-6.1.10.jar;D:\Software\repo\org\springframework\spring-context\6.1.10\spring-context-6.1.10.jar;D:\Software\repo\org\springframework\spring-expression\6.1.10\spring-expression-6.1.10.jar;D:\Software\repo\org\springframework\boot\spring-boot-devtools\3.3.1\spring-boot-devtools-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot\3.3.1\spring-boot-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-autoconfigure\3.3.1\spring-boot-autoconfigure-3.3.1.jar;D:\Software\repo\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-test\3.3.1\spring-boot-starter-test-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-test\3.3.1\spring-boot-test-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-test-autoconfigure\3.3.1\spring-boot-test-autoconfigure-3.3.1.jar;D:\Software\repo\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\Software\repo\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\Software\repo\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\Software\repo\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\Software\repo\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\Software\repo\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\Software\repo\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;D:\Software\repo\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;D:\Software\repo\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\Software\repo\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\Software\repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\Software\repo\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\Software\repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\Software\repo\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\Software\repo\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;D:\Software\repo\net\bytebuddy\byte-buddy-agent\1.14.17\byte-buddy-agent-1.14.17.jar;D:\Software\repo\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\Software\repo\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;D:\Software\repo\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\Software\repo\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\Software\repo\org\springframework\spring-core\6.1.10\spring-core-6.1.10.jar;D:\Software\repo\org\springframework\spring-jcl\6.1.10\spring-jcl-6.1.10.jar;D:\Software\repo\org\springframework\spring-test\6.1.10\spring-test-6.1.10.jar;D:\Software\repo\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\Software\repo\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-jdbc\3.3.1\spring-boot-starter-jdbc-3.3.1.jar;D:\Software\repo\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;D:\Software\repo\org\springframework\spring-jdbc\6.1.10\spring-jdbc-6.1.10.jar;D:\Software\repo\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\Software\repo\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\Software\repo\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\Software\repo\com\baomidou\mybatis-plus-boot-starter\3.5.5\mybatis-plus-boot-starter-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus\3.5.5\mybatis-plus-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-core\3.5.5\mybatis-plus-core-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-annotation\3.5.5\mybatis-plus-annotation-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-extension\3.5.5\mybatis-plus-extension-3.5.5.jar;D:\Software\repo\com\github\jsqlparser\jsqlparser\4.6\jsqlparser-4.6.jar;D:\Software\repo\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.5\mybatis-plus-spring-boot-autoconfigure-3.5.5.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-data-redis\3.3.1\spring-boot-starter-data-redis-3.3.1.jar;D:\Software\repo\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\Software\repo\io\netty\netty-common\4.1.111.Final\netty-common-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-handler\4.1.111.Final\netty-handler-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-resolver\4.1.111.Final\netty-resolver-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-buffer\4.1.111.Final\netty-buffer-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-transport-native-unix-common\4.1.111.Final\netty-transport-native-unix-common-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-codec\4.1.111.Final\netty-codec-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-transport\4.1.111.Final\netty-transport-4.1.111.Final.jar;D:\Software\repo\io\projectreactor\reactor-core\3.6.7\reactor-core-3.6.7.jar;D:\Software\repo\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\Software\repo\org\springframework\data\spring-data-redis\3.3.1\spring-data-redis-3.3.1.jar;D:\Software\repo\org\springframework\data\spring-data-keyvalue\3.3.1\spring-data-keyvalue-3.3.1.jar;D:\Software\repo\org\springframework\data\spring-data-commons\3.3.1\spring-data-commons-3.3.1.jar;D:\Software\repo\org\springframework\spring-tx\6.1.10\spring-tx-6.1.10.jar;D:\Software\repo\org\springframework\spring-oxm\6.1.10\spring-oxm-6.1.10.jar;D:\Software\repo\org\springframework\spring-context-support\6.1.10\spring-context-support-6.1.10.jar;D:\Software\repo\com\aliyun\aliyun-java-sdk-core\4.6.0\aliyun-java-sdk-core-4.6.0.jar;D:\Software\repo\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\Software\repo\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;D:\Software\repo\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\Software\repo\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;D:\Software\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Software\repo\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;D:\Software\repo\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;D:\Software\repo\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;D:\Software\repo\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;D:\Software\repo\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;D:\Software\repo\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;D:\Software\repo\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\Software\repo\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\Software\repo\org\bouncycastle\bcprov-jdk15on\1.70\bcprov-jdk15on-1.70.jar;D:\Software\repo\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7-runtime.jar;D:\Software\repo\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;D:\Software\repo\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\Software\repo\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;D:\Software\repo\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;D:\Software\repo\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;D:\Software\repo\com\aliyun\aliyun-java-sdk-dysmsapi\1.1.0\aliyun-java-sdk-dysmsapi-1.1.0.jar;D:\Software\repo\com\alibaba\fastjson\1.2.76\fastjson-1.2.76.jar;D:\Software\repo\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\Software\repo\org\springframework\session\spring-session-data-redis\3.3.1\spring-session-data-redis-3.3.1.jar;D:\Software\repo\org\springframework\session\spring-session-core\3.3.1\spring-session-core-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-security\3.3.1\spring-boot-starter-security-3.3.1.jar;D:\Software\repo\org\springframework\spring-aop\6.1.10\spring-aop-6.1.10.jar;D:\Software\repo\org\springframework\security\spring-security-config\6.3.1\spring-security-config-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-core\6.3.1\spring-security-core-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-crypto\6.3.1\spring-security-crypto-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-web\6.3.1\spring-security-web-6.3.1.jar;D:\Software\repo\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;D:\Software\repo\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;D:\Software\repo\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;D:\Software\repo\com\github\pagehelper\pagehelper-spring-boot-starter\2.1.0\pagehelper-spring-boot-starter-2.1.0.jar;D:\Software\repo\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\2.1.0\pagehelper-spring-boot-autoconfigure-2.1.0.jar;D:\Software\repo\com\github\pagehelper\pagehelper\6.1.0\pagehelper-6.1.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\31819\AppData\Local\Temp\surefire17765833067520671999\surefirebooter-20250712013941089_3.jar C:\Users\31819\AppData\Local\Temp\surefire17765833067520671999 2025-07-12T01-39-40_886-jvmRun1 surefire-20250712013941089_1tmp surefire_0-20250712013941089_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou\target\test-classes;E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou\target\classes;D:\Software\repo\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-web\3.3.1\spring-boot-starter-web-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter\3.3.1\spring-boot-starter-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-logging\3.3.1\spring-boot-starter-logging-3.3.1.jar;D:\Software\repo\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;D:\Software\repo\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;D:\Software\repo\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;D:\Software\repo\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;D:\Software\repo\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\Software\repo\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\Software\repo\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-json\3.3.1\spring-boot-starter-json-3.3.1.jar;D:\Software\repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-tomcat\3.3.1\spring-boot-starter-tomcat-3.3.1.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-core\10.1.25\tomcat-embed-core-10.1.25.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-el\10.1.25\tomcat-embed-el-10.1.25.jar;D:\Software\repo\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.25\tomcat-embed-websocket-10.1.25.jar;D:\Software\repo\org\springframework\spring-web\6.1.10\spring-web-6.1.10.jar;D:\Software\repo\org\springframework\spring-beans\6.1.10\spring-beans-6.1.10.jar;D:\Software\repo\io\micrometer\micrometer-observation\1.13.1\micrometer-observation-1.13.1.jar;D:\Software\repo\io\micrometer\micrometer-commons\1.13.1\micrometer-commons-1.13.1.jar;D:\Software\repo\org\springframework\spring-webmvc\6.1.10\spring-webmvc-6.1.10.jar;D:\Software\repo\org\springframework\spring-context\6.1.10\spring-context-6.1.10.jar;D:\Software\repo\org\springframework\spring-expression\6.1.10\spring-expression-6.1.10.jar;D:\Software\repo\org\springframework\boot\spring-boot-devtools\3.3.1\spring-boot-devtools-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot\3.3.1\spring-boot-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-autoconfigure\3.3.1\spring-boot-autoconfigure-3.3.1.jar;D:\Software\repo\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-test\3.3.1\spring-boot-starter-test-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-test\3.3.1\spring-boot-test-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-test-autoconfigure\3.3.1\spring-boot-test-autoconfigure-3.3.1.jar;D:\Software\repo\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\Software\repo\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\Software\repo\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\Software\repo\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\Software\repo\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\Software\repo\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\Software\repo\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;D:\Software\repo\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;D:\Software\repo\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\Software\repo\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\Software\repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\Software\repo\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\Software\repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\Software\repo\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\Software\repo\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\Software\repo\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;D:\Software\repo\net\bytebuddy\byte-buddy-agent\1.14.17\byte-buddy-agent-1.14.17.jar;D:\Software\repo\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\Software\repo\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;D:\Software\repo\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\Software\repo\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\Software\repo\org\springframework\spring-core\6.1.10\spring-core-6.1.10.jar;D:\Software\repo\org\springframework\spring-jcl\6.1.10\spring-jcl-6.1.10.jar;D:\Software\repo\org\springframework\spring-test\6.1.10\spring-test-6.1.10.jar;D:\Software\repo\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\Software\repo\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-jdbc\3.3.1\spring-boot-starter-jdbc-3.3.1.jar;D:\Software\repo\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;D:\Software\repo\org\springframework\spring-jdbc\6.1.10\spring-jdbc-6.1.10.jar;D:\Software\repo\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\Software\repo\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\Software\repo\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\Software\repo\com\baomidou\mybatis-plus-boot-starter\3.5.5\mybatis-plus-boot-starter-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus\3.5.5\mybatis-plus-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-core\3.5.5\mybatis-plus-core-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-annotation\3.5.5\mybatis-plus-annotation-3.5.5.jar;D:\Software\repo\com\baomidou\mybatis-plus-extension\3.5.5\mybatis-plus-extension-3.5.5.jar;D:\Software\repo\com\github\jsqlparser\jsqlparser\4.6\jsqlparser-4.6.jar;D:\Software\repo\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.5\mybatis-plus-spring-boot-autoconfigure-3.5.5.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-data-redis\3.3.1\spring-boot-starter-data-redis-3.3.1.jar;D:\Software\repo\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\Software\repo\io\netty\netty-common\4.1.111.Final\netty-common-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-handler\4.1.111.Final\netty-handler-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-resolver\4.1.111.Final\netty-resolver-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-buffer\4.1.111.Final\netty-buffer-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-transport-native-unix-common\4.1.111.Final\netty-transport-native-unix-common-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-codec\4.1.111.Final\netty-codec-4.1.111.Final.jar;D:\Software\repo\io\netty\netty-transport\4.1.111.Final\netty-transport-4.1.111.Final.jar;D:\Software\repo\io\projectreactor\reactor-core\3.6.7\reactor-core-3.6.7.jar;D:\Software\repo\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\Software\repo\org\springframework\data\spring-data-redis\3.3.1\spring-data-redis-3.3.1.jar;D:\Software\repo\org\springframework\data\spring-data-keyvalue\3.3.1\spring-data-keyvalue-3.3.1.jar;D:\Software\repo\org\springframework\data\spring-data-commons\3.3.1\spring-data-commons-3.3.1.jar;D:\Software\repo\org\springframework\spring-tx\6.1.10\spring-tx-6.1.10.jar;D:\Software\repo\org\springframework\spring-oxm\6.1.10\spring-oxm-6.1.10.jar;D:\Software\repo\org\springframework\spring-context-support\6.1.10\spring-context-support-6.1.10.jar;D:\Software\repo\com\aliyun\aliyun-java-sdk-core\4.6.0\aliyun-java-sdk-core-4.6.0.jar;D:\Software\repo\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\Software\repo\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;D:\Software\repo\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\Software\repo\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;D:\Software\repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Software\repo\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;D:\Software\repo\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;D:\Software\repo\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;D:\Software\repo\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;D:\Software\repo\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;D:\Software\repo\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;D:\Software\repo\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\Software\repo\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\Software\repo\org\bouncycastle\bcprov-jdk15on\1.70\bcprov-jdk15on-1.70.jar;D:\Software\repo\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7-runtime.jar;D:\Software\repo\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;D:\Software\repo\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\Software\repo\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;D:\Software\repo\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;D:\Software\repo\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;D:\Software\repo\com\aliyun\aliyun-java-sdk-dysmsapi\1.1.0\aliyun-java-sdk-dysmsapi-1.1.0.jar;D:\Software\repo\com\alibaba\fastjson\1.2.76\fastjson-1.2.76.jar;D:\Software\repo\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\Software\repo\org\springframework\session\spring-session-data-redis\3.3.1\spring-session-data-redis-3.3.1.jar;D:\Software\repo\org\springframework\session\spring-session-core\3.3.1\spring-session-core-3.3.1.jar;D:\Software\repo\org\springframework\boot\spring-boot-starter-security\3.3.1\spring-boot-starter-security-3.3.1.jar;D:\Software\repo\org\springframework\spring-aop\6.1.10\spring-aop-6.1.10.jar;D:\Software\repo\org\springframework\security\spring-security-config\6.3.1\spring-security-config-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-core\6.3.1\spring-security-core-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-crypto\6.3.1\spring-security-crypto-6.3.1.jar;D:\Software\repo\org\springframework\security\spring-security-web\6.3.1\spring-security-web-6.3.1.jar;D:\Software\repo\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;D:\Software\repo\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;D:\Software\repo\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;D:\Software\repo\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;D:\Software\repo\com\github\pagehelper\pagehelper-spring-boot-starter\2.1.0\pagehelper-spring-boot-starter-2.1.0.jar;D:\Software\repo\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\2.1.0\pagehelper-spring-boot-autoconfigure-2.1.0.jar;D:\Software\repo\com\github\pagehelper\pagehelper\6.1.0\pagehelper-6.1.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\31819"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="D:\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\31819\AppData\Local\Temp\surefire17765833067520671999\surefirebooter-20250712013941089_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="31819"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Software\repo"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\31819\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="E:\sysytem_developer_train\cemenghui\cemenghuiXCX\hou"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Kingbase\ES\V8\KESRealPro\V008R006C009B0014\Interface\compress\v8r6_compress_win\kb_x64\release;D:\Java\jdk-17\bin;D:\Java\jdk-17\jre\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files (x86)\Tencent\WechatWebDeveloper\dll;D:\Windows Kits\10\Windows Performance Toolkit\;D:\VSCode\Microsoft VS Code\bin;D:\Program Files\MATLAB\R2024a\runtime\win64;D:\Program Files\MATLAB\R2024a\bin;D:\Anaconada;D:\Anaconada\Scripts;D:\Anaconada\Library\bin;D:\Anaconada\Library\mingw-w64\bin;D:\Anaconada\Library\usr\bin;D:\MinGW\bin;C:\Program Files\MySQL\MySQL Server 9.0\bin;C:\Program Files\Git\cmd;D:\vivoworkgroup\pcsuite\;D:\apache-tomcat-9.0.45\bin;D:\Program Files\Nox\bin;D:\LINGO64;E:\pandoc-3.7.0.2-windows-x86_64\pandoc-3.7.0.2;D:\Java\ideaIU-2020.1.rar\apache-maven-3.5.2\apache-maven-3.5.2\bin;D:\Python3.8.6\Scripts\;D:\Python3.8.6\;D:\python\Scripts\;D:\python\;D:\Users\31819\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\31819\AppData\Local\Programs\Python\Python37\;C:\Users\31819\AppData\Local\Microsoft\WindowsApps;D:\texlive\2024\bin\windows;C:\Users\31819\.dotnet\tools;D:\pycharm\PyCharm 2023.1.4\bin;;D:\Web\WebStorm 2024.3.3\bin;;E:\Programs\cursor\resources\app\bin;C:\nvm4w\nodejs;C:\Users\31819\AppData\Local\nvm;D:\soft\nodejs\node_global;D:\Program Files (x86)\Tencent\WechatWebDeveloper\dll;;c:\Users\31819\.cursor\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="update_WithNullCourseId_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.491"/>
+  <testcase name="deleteCourse_WithNoUser_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.004">
+    <system-out><![CDATA[01:39:48.403 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/delete: 收到删除请求，用户ID: null, 请求数据: {id=1}
+]]></system-out>
+  </testcase>
+  <testcase name="update_WithNonExistentCourse_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.003">
+    <system-out><![CDATA[01:39:48.409 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 用户ID: 1 正在尝试修改课程ID: 999
+]]></system-out>
+  </testcase>
+  <testcase name="update_WithNormalUserUpdatingRejectedCourse_ShouldResetStatus" classname="com.lfx.demo.controller.CourseControllerTest" time="0.005">
+    <system-out><![CDATA[01:39:48.411 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 用户ID: 1 正在尝试修改课程ID: 1
+01:39:48.413 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 找到的课程信息 - authorId: 1
+01:39:48.413 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 权限检查 - isAdmin: false, isOwner: true
+01:39:48.413 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 比较 User ID (类型: java.lang.Integer, 值: 1) 与 Course Author ID (类型: java.lang.Integer, 值: 1)
+01:39:48.413 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 修改已驳回的课程，状态重置为待审核
+01:39:48.413 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 课程ID: 1 修改成功
+]]></system-out>
+  </testcase>
+  <testcase name="deleteCourses_WithException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.009">
+    <system-out><![CDATA[01:39:48.417 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/del: 收到批量删除请求，用户ID: 2, 要删除的课程IDs: [1, 2]
+01:39:48.419 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/del: 批量删除发生异常
+java.lang.RuntimeException: 删除错误
+	at com.lfx.demo.service.CourseService.delCourses(CourseService.java:43)
+	at com.lfx.demo.controller.CourseController.deleteCourses(CourseController.java:284)
+	at com.lfx.demo.controller.CourseControllerTest.deleteCourses_WithException_ShouldReturnError(CourseControllerTest.java:471)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="passCourse_WithMyException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.008">
+    <system-out><![CDATA[01:39:48.430 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/pass: 接收到审核请求，课程ID: 1, pass: null, status: null
+01:39:48.431 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/pass: 修正后的状态，课程ID: 1, pass: null, status: null
+01:39:48.432 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/pass: MyException异常
+com.lfx.demo.util.MyException: 自定义异常
+	at com.lfx.demo.service.CourseService.updateStatus(CourseService.java:53)
+	at com.lfx.demo.controller.CourseController.passCourse(CourseController.java:422)
+	at com.lfx.demo.controller.CourseControllerTest.passCourse_WithMyException_ShouldReturnError(CourseControllerTest.java:507)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="add_WithEmptyCourseName_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.003"/>
+  <testcase name="findCourses_WithMajorExceptionInMainLogic_ShouldHandleGracefully" classname="com.lfx.demo.controller.CourseControllerTest" time="0.008">
+    <system-out><![CDATA[01:39:48.445 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/list: 接口发生错误
+java.lang.RuntimeException: 会话错误
+	at com.lfx.demo.controller.CourseController.findCourses(CourseController.java:50)
+	at com.lfx.demo.controller.CourseControllerTest.findCourses_WithMajorExceptionInMainLogic_ShouldHandleGracefully(CourseControllerTest.java:595)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="update_WithSuperAdminSettingStatus_ShouldUpdateStatus" classname="com.lfx.demo.controller.CourseControllerTest" time="0.005">
+    <system-out><![CDATA[01:39:48.452 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 用户ID: 3 正在尝试修改课程ID: 1
+01:39:48.452 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 找到的课程信息 - authorId: 1
+01:39:48.452 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 权限检查 - isAdmin: true, isOwner: false
+01:39:48.453 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 比较 User ID (类型: java.lang.Integer, 值: 3) 与 Course Author ID (类型: java.lang.Integer, 值: 1)
+01:39:48.453 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 超级管理员正在更新状态. pass: 通过, status: PUBLISHED
+01:39:48.453 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 课程ID: 1 修改成功
+]]></system-out>
+  </testcase>
+  <testcase name="publishCourse_WithPartialFailure_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.004"/>
+  <testcase name="findCourses_WithOuterException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.006">
+    <system-out><![CDATA[01:39:48.462 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 收到来自用户 ID '1' 的请求
+01:39:48.462 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/list: 接口发生错误
+java.lang.RuntimeException: 数据库错误
+	at com.lfx.demo.service.CourseService.getCourseListForNonSuperAdmin(CourseService.java:20)
+	at com.lfx.demo.controller.CourseController.findCourses(CourseController.java:79)
+	at com.lfx.demo.controller.CourseControllerTest.findCourses_WithOuterException_ShouldReturnError(CourseControllerTest.java:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="findCourses_WithNullAuthorId_ShouldHandleCorrectly" classname="com.lfx.demo.controller.CourseControllerTest" time="0.02">
+    <system-out><![CDATA[01:39:48.468 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 收到来自用户 ID '1' 的请求
+01:39:48.468 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 用户 'testUser' (角色: 1) 找到 1 门课程
+01:39:48.485 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 最终序列化的JSON响应: null
+]]></system-out>
+  </testcase>
+  <testcase name="update_WithServiceFailure_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.004">
+    <system-out><![CDATA[01:39:48.490 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 用户ID: 1 正在尝试修改课程ID: 1
+01:39:48.490 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 找到的课程信息 - authorId: 1
+01:39:48.490 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 权限检查 - isAdmin: false, isOwner: true
+01:39:48.490 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 比较 User ID (类型: java.lang.Integer, 值: 1) 与 Course Author ID (类型: java.lang.Integer, 值: 1)
+01:39:48.490 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 非超级管理员修改，保持原有状态. pass: 待审核, status: PENDING
+01:39:48.490 [main] WARN com.lfx.demo.controller.CourseController -- >>> /course/update: 课程ID: 1 修改失败
+]]></system-out>
+  </testcase>
+  <testcase name="update_WithException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.007">
+    <system-out><![CDATA[01:39:48.497 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/update: 用户ID: 1 正在尝试修改课程ID: 1
+01:39:48.498 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/update: 修改课程发生异常
+java.lang.RuntimeException: 数据库错误
+	at com.lfx.demo.service.CourseService.selectById(CourseService.java:58)
+	at com.lfx.demo.controller.CourseController.update(CourseController.java:186)
+	at com.lfx.demo.controller.CourseControllerTest.update_WithException_ShouldReturnError(CourseControllerTest.java:418)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="findCourses_WithSuccessfulSerialization_ShouldReturnSuccess" classname="com.lfx.demo.controller.CourseControllerTest" time="0.006">
+    <system-out><![CDATA[01:39:48.505 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 收到来自用户 ID '3' 的请求
+01:39:48.505 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 超级管理员用户, 共找到 3 门课程
+01:39:48.505 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 最终序列化的JSON响应: {"code":200,"msg":"加载成功"}
+]]></system-out>
+  </testcase>
+  <testcase name="add_WithServiceFailure_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.01">
+    <system-out><![CDATA[01:39:48.517 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/add: 创建课程，创建者信息 - 用户名: testUser, ID: 1, 部门: 测试部门, 角色: 1
+]]></system-out>
+  </testcase>
+  <testcase name="deleteCourses_WithServiceFailure_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.004">
+    <system-out><![CDATA[01:39:48.522 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/del: 收到批量删除请求，用户ID: 2, 要删除的课程IDs: [1, 2]
+01:39:48.522 [main] WARN com.lfx.demo.controller.CourseController -- >>> /course/del: 批量删除失败，课程IDs: [1, 2]
+]]></system-out>
+  </testcase>
+  <testcase name="findCourses_WithExceptionDuringMapping_ShouldHandleGracefully" classname="com.lfx.demo.controller.CourseControllerTest" time="0.008">
+    <system-out><![CDATA[01:39:48.528 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 收到来自用户 ID '1' 的请求
+01:39:48.529 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 用户 'testUser' (角色: 1) 找到 3 门课程
+01:39:48.530 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/list: 序列化JSON响应时发生错误
+java.lang.RuntimeException: 映射错误
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4038)
+	at com.lfx.demo.controller.CourseController.findCourses(CourseController.java:114)
+	at com.lfx.demo.controller.CourseControllerTest.findCourses_WithExceptionDuringMapping_ShouldHandleGracefully(CourseControllerTest.java:584)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="deleteSingleCourse_WithNoUser_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.004">
+    <system-out><![CDATA[01:39:48.535 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/del/single: 收到单个删除请求，用户ID: null, 请求数据: {id=1}
+]]></system-out>
+  </testcase>
+  <testcase name="add_WithException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.005">
+    <system-out><![CDATA[01:39:48.540 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/add: 创建课程，创建者信息 - 用户名: testUser, ID: 1, 部门: 测试部门, 角色: 1
+01:39:48.540 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/add: 添加课程发生异常
+java.lang.RuntimeException: 数据库错误
+	at com.lfx.demo.service.CourseService.addCourse(CourseService.java:38)
+	at com.lfx.demo.controller.CourseController.add(CourseController.java:156)
+	at com.lfx.demo.controller.CourseControllerTest.add_WithException_ShouldReturnError(CourseControllerTest.java:282)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="submitForReview_WithAlreadySubmittedCourse_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.005">
+    <system-out><![CDATA[01:39:48.546 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/submitForReview: 课程ID: 1, 当前状态: PUBLISHED, pass字段: 待审核
+01:39:48.546 [main] WARN com.lfx.demo.controller.CourseController -- >>> /course/submitForReview: 课程状态不允许提交审核，当前状态: PUBLISHED
+]]></system-out>
+  </testcase>
+  <testcase name="findCourses_WithSerializationException_ShouldStillReturnSuccess" classname="com.lfx.demo.controller.CourseControllerTest" time="0.005">
+    <system-out><![CDATA[01:39:48.549 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 收到来自用户 ID '1' 的请求
+01:39:48.549 [main] INFO com.lfx.demo.controller.CourseController -- >>> /course/list: 用户 'testUser' (角色: 1) 找到 3 门课程
+01:39:48.550 [main] ERROR com.lfx.demo.controller.CourseController -- >>> /course/list: 序列化JSON响应时发生错误
+java.lang.RuntimeException: 序列化错误
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4038)
+	at com.lfx.demo.controller.CourseController.findCourses(CourseController.java:114)
+	at com.lfx.demo.controller.CourseControllerTest.findCourses_WithSerializationException_ShouldStillReturnSuccess(CourseControllerTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="search_WithException_ShouldReturnError" classname="com.lfx.demo.controller.CourseControllerTest" time="0.022">
+    <system-err><![CDATA[org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'serachCourse' method:
+    courseService.serachCourse("Java", null);
+    -> at com.lfx.demo.controller.CourseController.search(CourseController.java:257)
+ - has following stubbing(s) with different arguments:
+    1. courseService.serachCourse("", "");
+      -> at com.lfx.demo.controller.CourseControllerTest.search_WithException_ShouldReturnError(CourseControllerTest.java:429)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+	at com.lfx.demo.service.CourseService.serachCourse(CourseService.java:33)
+	at com.lfx.demo.controller.CourseController.search(CourseController.java:257)
+	at com.lfx.demo.controller.CourseControllerTest.search_WithException_ShouldReturnError(CourseControllerTest.java:435)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/meeting/meeting",
+    "pages/trends/trends",
+    "pages/course/course",
+    "pages/profile/profile",
+    "pages/meeting/detail/detail",
+    "pages/meeting/receipt/receipt",
+    "pages/trends/detail/detail",
+    "pages/course/detail/detail",
+    "pages/profile/info/info",
+    "pages/profile/password/password",
+    "pages/profile/my-courses/my-courses",
+    "pages/profile/register/register",
+    "pages/profile/feedback/feedback",
+    "pages/profile/phone-login/phone-login",
+    "pages/profile/user-agreement/user-agreement",
+    "pages/profile/privacy-policy/privacy-policy"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1976D2",
+    "navigationBarTitleText": "测盟汇",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1976D2",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/meeting/meeting",
+        "iconPath": "static/icons/meeting.png",
+        "selectedIconPath": "static/icons/meeting-active.png",
+        "text": "会议"
+      },
+      {
+        "pagePath": "pages/trends/trends",
+        "iconPath": "static/icons/trends.png",
+        "selectedIconPath": "static/icons/trends-active.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "iconPath": "static/icons/course.png",
+        "selectedIconPath": "static/icons/course-active.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/icons/profile.png",
+        "selectedIconPath": "static/icons/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+} 

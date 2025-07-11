@@ -1,0 +1,139 @@
+/* pages/profile/phone-login/phone-login.wxss */
+.page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.form-container {
+  padding: 60rpx 40rpx;
+}
+
+/* 标题区域 */
+.header {
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+
+.title {
+  display: block;
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+}
+
+/* 表单项 */
+.form-item {
+  margin-bottom: 40rpx;
+}
+
+.label {
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 15rpx;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  height: 90rpx;
+  padding: 0 25rpx;
+  font-size: 32rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 12rpx;
+  background-color: #fff;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+/* 密码输入框 */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  flex: 1;
+  padding-right: 80rpx;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 20rpx;
+  width: 48rpx;
+  height: 48rpx;
+  padding: 20rpx;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.toggle-icon:active {
+  opacity: 0.8;
+}
+
+.toggle-text {
+  font-size: 28rpx;
+  color: #007bff;
+}
+
+/* 忘记密码 */
+.forgot-password {
+  text-align: right;
+  margin-bottom: 60rpx;
+}
+
+.forgot-link {
+  font-size: 28rpx;
+  color: #007bff;
+}
+
+/* 登录按钮 */
+.login-btn {
+  width: 100%;
+  height: 100rpx;
+  background-color: #007bff;
+  color: white;
+  font-size: 36rpx;
+  border-radius: 12rpx;
+  border: none;
+  margin-bottom: 40rpx;
+}
+
+.login-btn:active {
+  background-color: #0056b3;
+}
+
+/* 注册提示 */
+.register-tip {
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+.register-link {
+  color: #007bff;
+  margin-left: 10rpx;
+}
+
+/* 协议提示 */
+.agreement-tip {
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 1.5;
+}
+
+.agreement-link {
+  color: #007bff;
+} 

@@ -1,0 +1,68 @@
+<!--pages/profile/info/info.wxml-->
+<view class="page" wx:if="{{userInfo}}">
+  <view class="form-container">
+    <!-- 头像 -->
+    <view class="form-item avatar-item" bindtap="chooseAvatar">
+      <text class="form-label">头像</text>
+      <view class="form-control">
+        <image 
+          class="avatar-preview" 
+          src="{{userInfo.imageUrl || defaultAvatar}}" 
+          mode="aspectFill"
+          binderror="onAvatarError"
+        ></image>
+        <text class="arrow">›</text>
+      </view>
+    </view>
+
+    <!-- 昵称 -->
+    <view class="form-item">
+      <text class="label">昵称</text>
+      <input class="input" value="{{userInfo.nickname}}" placeholder="请输入昵称" data-field="nickname" bindinput="handleInputChange" />
+    </view>
+    
+    <!-- 手机号 -->
+    <view class="form-item">
+      <text class="label">手机号</text>
+      <input class="input" type="number" value="{{userInfo.tel || userInfo.phone}}" placeholder="请输入手机号" data-field="tel" bindinput="handleInputChange" />
+    </view>
+    
+    <!-- 验证码 -->
+    <view class="form-item" wx:if="{{userInfo.tel !== originalUserInfo.tel}}">
+      <text class="label">验证码</text>
+      <input class="input" type="number" placeholder="请输入验证码" bindinput="handleInputChange" data-field="code"/>
+      <button class="code-btn {{isCountingDown ? 'disabled' : ''}}" bindtap="sendCode" disabled="{{isCountingDown}}">
+        {{isCountingDown ? countdown + 's' : '获取验证码'}}
+      </button>
+    </view>
+
+    <!-- 邮箱 -->
+    <view class="form-item">
+      <text class="label">邮箱</text>
+      <input class="input" value="{{userInfo.email}}" placeholder="请输入邮箱" data-field="email" bindinput="handleInputChange" />
+    </view>
+
+    <!-- 性别 -->
+    <picker 
+      range="{{genderOptions}}" 
+      bindchange="onGenderChange"
+    >
+      <view class="form-item">
+        <text class="label">性别</text>
+        <view class="value-wrapper">
+          <text class="value">
+            {{userInfo.sex === 'man' ? '男' : userInfo.sex === 'woman' ? '女' : '请选择'}}
+          </text>
+          <text class="arrow">></text>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+  <view class="save-button-container">
+    <button class="save-button" type="primary" bindtap="saveInfo">保 存</button>
+  </view>
+</view>
+<view class="loading-placeholder" wx:else>
+  <text>加载中...</text>
+</view> 

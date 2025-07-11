@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: com.lfx.demo.util.InterceptorConfigTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.175 s <<< FAILURE! -- in com.lfx.demo.util.InterceptorConfigTest
+com.lfx.demo.util.InterceptorConfigTest.testAddInterceptors -- Time elapsed: 0.050 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.InterceptorRegistration.addPathPatterns(String[])" because the return value of "org.springframework.web.servlet.config.annotation.InterceptorRegistry.addInterceptor(org.springframework.web.servlet.HandlerInterceptor)" is null
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at com.lfx.demo.util.InterceptorConfigTest.testAddInterceptors(InterceptorConfigTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.InterceptorRegistration.addPathPatterns(String[])" because the return value of "org.springframework.web.servlet.config.annotation.InterceptorRegistry.addInterceptor(org.springframework.web.servlet.HandlerInterceptor)" is null
+	at com.lfx.demo.util.InterceptorConfig.addInterceptors(InterceptorConfig.java:29)
+	at com.lfx.demo.util.InterceptorConfigTest.lambda$testAddInterceptors$1(InterceptorConfigTest.java:23)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+
+com.lfx.demo.util.InterceptorConfigTest.testAddResourceHandlers -- Time elapsed: 0.075 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.ResourceHandlerRegistration.addResourceLocations(String[])" because the return value of "org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry.addResourceHandler(String[])" is null
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at com.lfx.demo.util.InterceptorConfigTest.testAddResourceHandlers(InterceptorConfigTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.ResourceHandlerRegistration.addResourceLocations(String[])" because the return value of "org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry.addResourceHandler(String[])" is null
+	at com.lfx.demo.util.InterceptorConfig.addResourceHandlers(InterceptorConfig.java:73)
+	at com.lfx.demo.util.InterceptorConfigTest.lambda$testAddResourceHandlers$2(InterceptorConfigTest.java:30)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+
+com.lfx.demo.util.InterceptorConfigTest.testAddCorsMappings -- Time elapsed: 0.046 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.CorsRegistration.allowedOriginPatterns(String[])" because the return value of "org.springframework.web.servlet.config.annotation.CorsRegistry.addMapping(String)" is null
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at com.lfx.demo.util.InterceptorConfigTest.testAddCorsMappings(InterceptorConfigTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.config.annotation.CorsRegistration.allowedOriginPatterns(String[])" because the return value of "org.springframework.web.servlet.config.annotation.CorsRegistry.addMapping(String)" is null
+	at com.lfx.demo.util.InterceptorConfig.addCorsMappings(InterceptorConfig.java:19)
+	at com.lfx.demo.util.InterceptorConfigTest.lambda$testAddCorsMappings$0(InterceptorConfigTest.java:16)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+

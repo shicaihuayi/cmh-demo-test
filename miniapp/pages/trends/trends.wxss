@@ -1,0 +1,130 @@
+/* pages/trends/trends.wxss */
+@import "../../app.wxss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* 搜索栏 */
+.search-bar {
+  padding: 16rpx 24rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 24rpx;
+  height: 68rpx;
+  background-color: #f5f5f5;
+  border-radius: 34rpx;
+}
+.search-input {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+/* 列表 */
+.list-container {
+  flex: 1;
+  height: 0; /* flex布局下的重要技巧，让scroll-view正确滚动 */
+}
+.trend-item {
+  display: flex;
+  padding: 30rpx 24rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+.trend-item:active {
+  background-color: #fafafa;
+}
+.item-image {
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10rpx;
+}
+.item-source {
+  font-size: 26rpx;
+  color: #999;
+}
+
+/* 状态提示 */
+.loading, .empty, .error-message {
+  text-align: center;
+  padding: 80rpx 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.error-message {
+  color: #ff4444;
+}
+.empty {
+  color: #ccc;
+}
+
+.list-footer {
+  text-align: center;
+  color: #ccc;
+  font-size: 24rpx;
+  padding: 40rpx 0;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #999;
+}
+
+.placeholder text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.placeholder text:last-child {
+  font-size: 28rpx;
+}
+
+.trend-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #f5f5f5;
+}
+
+.trend-date {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.view-detail {
+  font-size: 26rpx;
+  color: #007aff;
+} 

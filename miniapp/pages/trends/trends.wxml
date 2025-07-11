@@ -1,0 +1,40 @@
+<!--pages/trends/trends.wxml-->
+<view class="page">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <view class="search-wrapper">
+      <icon class="search-icon" type="search" size="16"></icon>
+      <input class="search-input" 
+             placeholder="请输入动态名称或动态简介" 
+             value="{{searchKeyword}}" 
+             bindinput="onSearchInput"
+             confirm-type="search"
+             bindconfirm="onSearchConfirm" />
+    </view>
+  </view>
+
+  <!-- 动态列表 -->
+  <scroll-view scroll-y="true" class="list-container">
+    <view class="trend-item" 
+          wx:for="{{trendsList}}" 
+          wx:key="id" 
+          data-id="{{item.id}}"
+          bindtap="navigateToDetail">
+      <image class="item-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+      <view class="item-info">
+        <view class="item-title">{{item.title}}</view>
+        <view class="item-source">{{item.author}}</view>
+      </view>
+    </view>
+    
+    <!-- 加载状态和空状态提示 -->
+    <view wx:if="{{isLoading}}" class="loading">加载中...</view>
+    <view wx:elif="{{trendsList.length === 0}}" class="empty">暂无动态数据</view>
+    
+    <!-- 列表底部提示 -->
+    <view wx:if="{{!hasMore && trendsList.length > 0}}" class="list-footer">没有更多数据了</view>
+  </scroll-view>
+  
+  <!-- 错误提示 -->
+  <view wx:if="{{errorMessage}}" class="error-message">{{errorMessage}}</view>
+</view> 

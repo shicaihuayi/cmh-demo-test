@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lfx.demo.service.CourseServiceTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s -- in com.lfx.demo.service.CourseServiceTest

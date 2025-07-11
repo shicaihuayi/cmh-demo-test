@@ -1,0 +1,55 @@
+<!--pages/profile/feedback/feedback.wxml-->
+<view class="page">
+  <view class="form-container">
+    <!-- 反馈类型 -->
+    <view class="form-item">
+      <text class="label">反馈类型<text class="required">*</text></text>
+      <picker 
+        mode="selector"
+        range="{{feedbackTypes}}" 
+        value="{{feedbackTypes.indexOf(form.type)}}"
+        bindchange="onTypeChange"
+      >
+        <view class="select-wrapper {{!form.type ? 'empty' : ''}}">
+          <text class="select-text">{{form.type || '请选择反馈类型'}}</text>
+          <text class="arrow">›</text>
+        </view>
+      </picker>
+    </view>
+
+    <!-- 反馈内容 -->
+    <view class="form-item">
+      <text class="label">反馈内容<text class="required">*</text></text>
+      <textarea 
+        class="textarea" 
+        placeholder="请详细描述您的问题或建议，至少10个字符"
+        placeholder-class="placeholder"
+        value="{{form.content}}"
+        data-field="content"
+        bindinput="onInputChange"
+        maxlength="500"
+        show-confirm-bar="{{false}}"
+        auto-height
+      ></textarea>
+      <view class="char-count">{{form.content.length || 0}}/500</view>
+    </view>
+
+    <!-- 联系方式 -->
+    <view class="form-item">
+      <text class="label">联系方式</text>
+      <input 
+        class="input" 
+        type="text"
+        placeholder="请输入您的手机号或邮箱（选填）" 
+        placeholder-class="placeholder"
+        value="{{form.contact}}"
+        data-field="contact"
+        bindinput="onInputChange"
+      />
+      <text class="tip">便于我们及时回复您</text>
+    </view>
+
+    <!-- 提交按钮 -->
+    <button class="submit-btn" bindtap="submitFeedback">提交反馈</button>
+  </view>
+</view> 

@@ -1,0 +1,107 @@
+/* pages/course/detail/detail.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 120rpx; /* 为底部操作栏留出空间 */
+}
+
+.course-video {
+  width: 100%;
+  height: 420rpx;
+}
+
+.course-body {
+  padding: 0 30rpx;
+}
+
+.section {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.section:last-child {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.author {
+  font-size: 28rpx;
+  color: #888;
+  margin-top: 16rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.objectives-list {
+  font-size: 28rpx;
+  color: #555;
+  line-height: 1.8;
+}
+
+.description {
+  font-size: 28rpx;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1rpx solid #eee;
+  padding: 0 30rpx;
+  box-shadow: 0 -2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.enroll-btn {
+  background: linear-gradient(90deg, #4a90e2, #007bff);
+  color: white;
+  border: none;
+  border-radius: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enroll-btn.enrolled {
+  background-color: #c0c0c0;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.enroll-btn:disabled {
+  background-color: #c0c0c0;
+  color: #888888;
+}
+
+.video-player {
+  width: 100%;
+} 

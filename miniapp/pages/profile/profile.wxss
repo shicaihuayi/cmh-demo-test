@@ -1,0 +1,221 @@
+/* pages/profile/profile.wxss */
+.page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+/* 头部 */
+.profile-header {
+  background-color: #007bff;
+  color: white;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.profile-header.not-logged-in {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1rpx solid #eee;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+  margin-right: 30rpx;
+}
+.not-logged-in .avatar {
+  border: none;
+  background-color: transparent;
+}
+
+.nickname {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.login-prompt {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+/* 菜单列表 */
+.menu-list {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+  border-bottom: 1rpx solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+.menu-item:last-child {
+  border-bottom: none;
+}
+.menu-item:active {
+  background-color: #f7f7f7;
+}
+
+.arrow {
+  color: #ccc;
+  font-size: 30rpx;
+}
+
+/* 退出按钮 */
+.logout-wrapper {
+  margin: 60rpx 30rpx 0;
+}
+.logout-btn {
+  background-color: #fff;
+  color: #ff4d4f;
+  font-size: 32rpx;
+  border: 1rpx solid #f0f0f0;
+}
+.logout-btn:active {
+  background-color: #f7f7f7;
+}
+
+/* 登录弹窗样式 */
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 20rpx;
+  width: 600rpx;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.modal-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-close {
+  font-size: 50rpx;
+  color: #999;
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  padding: 40rpx 30rpx;
+}
+
+/* 微信登录按钮 */
+.wechat-login-btn {
+  background-color: #07C160;
+  color: white;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.wechat-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 15rpx;
+}
+
+/* 分割线 */
+.divider {
+  text-align: center;
+  margin: 40rpx 0;
+  position: relative;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1rpx;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.divider text {
+  background-color: #fff;
+  padding: 0 20rpx;
+  position: relative;
+  z-index: 2;
+}
+
+/* 其他登录方式 */
+.other-login {
+  display: flex;
+  gap: 20rpx;
+}
+
+.phone-login-btn,
+.register-btn {
+  flex: 1;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 30rpx;
+  border: 1rpx solid #007bff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.phone-login-btn:active,
+.register-btn:active {
+  background-color: #f0f8ff;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #999;
+}
+
+.placeholder text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.placeholder text:last-child {
+  font-size: 28rpx;
+} 

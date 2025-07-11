@@ -1,0 +1,244 @@
+/* pages/profile/my-courses/my-courses.wxss */
+.page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding: 20rpx;
+}
+
+/* 课程列表 */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+/* 课程项 */
+.course-item {
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 课程封面 */
+.course-cover {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 课程信息 */
+.course-info {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.author {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.enroll-time {
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+
+.learn-btn {
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #007bff;
+  color: white;
+  font-size: 28rpx;
+  border-radius: 35rpx;
+  padding: 0;
+}
+
+/* 加载中 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 空状态 */
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200rpx;
+}
+
+.empty-icon {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 30rpx;
+}
+
+.empty-text {
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 课程头部信息 */
+.course-header {
+  margin-bottom: 20rpx;
+}
+
+.course-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instructor {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.duration {
+  font-size: 26rpx;
+  color: #007bff;
+  background-color: #f0f8ff;
+  padding: 4rpx 12rpx;
+  border-radius: 20rpx;
+}
+
+/* 进度部分 */
+.progress-section {
+  margin-bottom: 20rpx;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.progress-text {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.lesson-info {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.progress-bar {
+  height: 12rpx;
+  background-color: #f0f0f0;
+  border-radius: 6rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 6rpx;
+  transition: width 0.3s ease;
+}
+
+/* 最后学习时间 */
+.last-study {
+  margin-bottom: 20rpx;
+}
+
+.last-study-text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 操作按钮 */
+.course-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  font-size: 28rpx;
+  padding: 12rpx 24rpx;
+  border-radius: 20rpx;
+  border: none;
+  min-width: 160rpx;
+}
+
+.continue-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.continue-btn:active {
+  background-color: #0056b3;
+}
+
+.restart-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.restart-btn:active {
+  background-color: #1e7e34;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100rpx 40rpx;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 32rpx;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+
+.empty-desc {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 40rpx;
+}
+
+.browse-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 30rpx;
+  padding: 20rpx 40rpx;
+  border-radius: 25rpx;
+  border: none;
+}
+
+.browse-btn:active {
+  background-color: #0056b3;
+} 

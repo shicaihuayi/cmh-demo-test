@@ -1,0 +1,39 @@
+<!--pages/course/detail/detail.wxml-->
+<view class="page">
+  <scroll-view scroll-y="true" class="page-content">
+    <!-- 视频播放器 -->
+    <video
+      id="myVideo"
+      class="course-video"
+      src="{{course.videoUrl}}"
+      controls
+      poster="" 
+    ></video>
+    
+    <view class="course-body">
+      <!-- 课程标题与作者 -->
+      <view class="section course-header">
+        <view class="title">{{course.name}}</view>
+        <view class="author">主讲：{{course.author}}</view>
+      </view>
+
+      <!-- 课程简介 -->
+      <view class="section">
+        <view class="section-title">课程简介</view>
+        <view class="description">
+          {{course.introduction}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+  <!-- 底部操作栏 -->
+  <view class="bottom-bar">
+    <button 
+      class="enroll-btn {{isEnrolled ? 'enrolled' : ''}}" 
+      bindtap="enrollNow"
+      disabled="{{isEnrolled || isEnrolling}}">
+      {{isEnrolled ? '已报名' : '立即报名'}}
+    </button>
+  </view>
+</view> 

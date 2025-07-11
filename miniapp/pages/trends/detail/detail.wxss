@@ -1,0 +1,100 @@
+/* pages/trends/detail/detail.wxss */
+@import "../../../app.wxss";
+
+.page {
+  height: 100vh;
+}
+.page-content {
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 100%;
+}
+.title {
+  font-size: 44rpx;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20rpx;
+}
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 40rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.meta-item {
+  flex: 1;
+  margin-right: 20rpx;
+}
+.meta-item:last-child {
+  margin-right: 0;
+}
+
+/* 封面图片 */
+.cover-image {
+  width: 100%;
+  border-radius: 12rpx;
+  margin-bottom: 30rpx;
+}
+
+.content-body {
+  font-size: 32rpx;
+  line-height: 1.8;
+  color: #333;
+}
+.content-text {
+  text-align: justify;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.paragraph {
+  margin-bottom: 20rpx;
+  text-align: justify;
+}
+.content-image {
+  width: 100%;
+  border-radius: 12rpx;
+  margin: 20rpx 0;
+}
+
+/* 附件部分 */
+.attachment-section {
+  margin-top: 50rpx;
+  padding-top: 30rpx;
+  border-top: 1rpx solid #eee;
+}
+.section-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.attachment-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.attachment-name {
+  font-size: 28rpx;
+  color: #007aff;
+}
+.download-btn {
+  color: #007aff;
+  border: 1rpx solid #007aff;
+  background-color: #fff;
+  margin: 0;
+}
+
+/* 加载和错误状态 */
+.loading, .error-message {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.error-message {
+  color: #ff4444;
+} 

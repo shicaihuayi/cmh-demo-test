@@ -1,0 +1,203 @@
+/* pages/course/course.wxss */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #999;
+}
+
+.placeholder text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.placeholder text:last-child {
+  font-size: 28rpx;
+}
+
+.page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding-bottom: 20rpx;
+}
+
+/* 搜索栏 */
+.search-bar {
+  padding: 16rpx 24rpx;
+  background-color: #fff;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  height: 64rpx;
+  line-height: 64rpx;
+  padding: 0 20rpx 0 68rpx;
+  border-radius: 32rpx;
+  font-size: 28rpx;
+}
+.search-icon {
+  position: absolute;
+  left: 48rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  z-index: 1;
+}
+
+/* 排序栏 */
+.sort-bar {
+  display: flex;
+  padding: 20rpx 24rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 28rpx;
+  color: #666;
+}
+.sort-option {
+  margin-right: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.sort-option.active {
+  color: #007bff;
+  font-weight: bold;
+}
+.dropdown-arrow {
+  font-size: 20rpx;
+  margin-left: 8rpx;
+}
+
+/* 课程网格 */
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24rpx;
+}
+
+.course-card {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.card-content {
+  padding: 20rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 78rpx;
+  line-height: 1.4;
+}
+
+.author {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.price-wrapper {
+  color: #ff4d4f;
+  display: flex;
+  align-items: baseline;
+}
+
+.price-symbol {
+  font-size: 24rpx;
+  margin-right: 2rpx;
+}
+
+.price-value {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.meta-info {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.tag-type {
+  background-color: #e6f7ff;
+  border: 1rpx solid #91d5ff;
+  color: #1890ff;
+  padding: 4rpx 12rpx;
+  border-radius: 6rpx;
+  margin-right: 15rpx;
+}
+
+.participants {
+  line-height: 1;
+}
+
+/* 底部加载 */
+.loading-footer {
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+  padding: 20rpx 0;
+}
+
+/* 加载状态 */
+.loading {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+}
+
+/* 空状态 */
+.empty {
+  text-align: center;
+  padding: 80rpx 40rpx;
+  color: #999;
+}
+
+/* 错误提示 */
+.error-message {
+  text-align: center;
+  padding: 40rpx;
+  color: #f56c6c;
+  font-size: 28rpx;
+} 

@@ -1,0 +1,43 @@
+<!--pages/trends/detail/detail.wxml-->
+<view class="page">
+  <scroll-view scroll-y="true" class="page-content">
+    <!-- 标题 -->
+    <view class="title">{{trend.title}}</view>
+    
+    <!-- 元信息 -->
+    <view class="meta-info">
+      <text class="meta-item">作者: {{trend.author}}</text>
+      <text class="meta-item">发布时间: {{trend.publishTime}}</text>
+    </view>
+    
+    <!-- 封面图片 -->
+    <image wx:if="{{trend.imageUrl}}" class="cover-image" src="{{trend.imageUrl}}" mode="widthFix"></image>
+    
+    <!-- 正文内容 -->
+    <view class="content-body">
+      <view class="content-text">{{trend.content}}</view>
+    </view>
+    
+    <!-- 相关附件 -->
+    <view class="attachment-section" wx:if="{{trend.attachments && trend.attachments.length > 0}}">
+      <view class="section-title">相关附件</view>
+      <view class="attachment-list">
+        <view class="attachment-item" 
+              wx:for="{{trend.attachments}}" 
+              wx:key="name" 
+              data-attachment="{{item}}"
+              bindtap="downloadAttachment">
+          <text class="attachment-name">{{item.name}}</text>
+          <button class="download-btn" size="mini">下载</button>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+  
+  <!-- 加载状态 -->
+  <view wx:if="{{isLoading}}" class="loading">加载中...</view>
+  
+  <!-- 错误提示 -->
+  <view wx:if="{{errorMessage}}" class="error-message">{{errorMessage}}</view>
+</view> 

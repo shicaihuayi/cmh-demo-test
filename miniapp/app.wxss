@@ -1,0 +1,128 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* 通用样式 */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.page-content {
+  padding: 20rpx;
+}
+
+/* 轮播图样式 */
+.swiper-container {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+/* 标题样式 */
+.section-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin: 40rpx 0 20rpx 0;
+  padding-left: 20rpx;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  border-radius: 10rpx;
+  padding: 20rpx 40rpx;
+  font-size: 32rpx;
+}
+
+.btn-primary:hover {
+  background-color: #1565C0;
+}
+
+/* 文本样式 */
+.text-primary {
+  color: #1976D2;
+}
+
+.text-secondary {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.text-muted {
+  color: #999;
+  font-size: 24rpx;
+}
+
+/* 布局样式 */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* 间距样式 */
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.p-20 {
+  padding: 20rpx;
+} 
