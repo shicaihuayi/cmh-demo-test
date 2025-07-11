@@ -14,3 +14,4 @@ export const useHomeStore = defineStore('home', () => {
 
     return { index,updateIndex };
 });
+

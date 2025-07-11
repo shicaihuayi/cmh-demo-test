@@ -7,3 +7,4 @@ export const errorCode: any = {
   '601': 'Custom Error 601',
   default: 'Unknown Error'
 };
+

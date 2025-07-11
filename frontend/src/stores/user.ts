@@ -15,6 +15,5 @@ export const useUserStore = defineStore('user', () => {
     function updateHeadImg(newHeadImg: string) {
         headImg.value = newHeadImg;
     }
-
     return { name, role, headImg, setUserInfo, updateHeadImg };
 });
