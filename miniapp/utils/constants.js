@@ -1,13 +1,24 @@
-// utils/constants.js
-// 项目常量配置
+/**
+ * 测盟汇小程序常量配置文件
+ * 
+ * @author Wang Shenjun
+ * @date 2025.07.12
+ * @version 1.0.0
+ * 
+ * 功能说明：
+ * - 项目常量配置
+ * - API接口地址配置
+ * - 存储键值配置
+ * - 页面路径配置
+ */
 
 // API根路径
 // 区分开发环境和生产环境
 const env = 'dev'; // 'dev' or 'prod'
 
 const baseURLMap = {
-  dev: 'http://localhost:8080', // 修改：去掉/api前缀，直接对接后端
-  prod: 'https://api.yourdomain.com', // 修改：去掉/api前缀
+  dev: 'http://localhost:8080', // 开发环境API地址
+  prod: 'https://api.yourdomain.com', // 生产环境API地址
 };
 
 const BASE_URL = 'http://localhost:8080';
@@ -99,6 +110,7 @@ const MEETING_TYPE_NAMES = {
   [MEETING_TYPES.CHARITY]: '公益行动'
 };
 
+// 导出常量
 module.exports = {
   BASE_URL,
   APP_NAME,

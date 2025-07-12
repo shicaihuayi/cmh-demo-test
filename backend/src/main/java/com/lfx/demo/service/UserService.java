@@ -1,3 +1,24 @@
+/**
+ * 用户服务类
+ * 
+ * 功能说明：
+ * - 用户认证和登录验证
+ * - 用户信息管理（增删改查）
+ * - 短信验证码发送和验证
+ * - 用户权限和状态管理
+ * - Redis缓存集成
+ * - 安全防护机制
+ * 
+ * 核心业务：
+ * - 支持用户名和手机号两种登录方式
+ * - 验证码5分钟有效期管理
+ * - 用户状态控制（启用/禁用）
+ * - 超级管理员保护机制
+ * 
+ * @author Wang Shenjun
+ * @date 2025.07.12
+ * @version 1.0.0
+ */
 package com.lfx.demo.service;
 
 import com.aliyuncs.utils.StringUtils;

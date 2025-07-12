@@ -1,3 +1,18 @@
+/**
+ * 用户实体类
+ * 
+ * 功能说明：
+ * - 用户基本信息管理
+ * - 支持微信小程序登录（openid）
+ * - 用户角色和权限管理
+ * - 公司信息和部门关联
+ * 
+ * 数据库表：t_user
+ * 
+ * @author Wang Shenjun
+ * @date 2025.07.12
+ * @version 1.0.0
+ */
 package com.lfx.demo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;

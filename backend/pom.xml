@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  测盟汇后端 - Maven项目配置文件
+  
+  功能说明：
+  - Spring Boot项目依赖管理
+  - 数据库连接配置（MySQL + MyBatis Plus）
+  - Redis缓存配置
+  - 短信服务集成（阿里云）
+  - 安全框架配置（Spring Security + JWT）
+  - 分页插件配置
+  
+  @author Wang Shenjun
+  @date 2025.07.12
+  @version 1.0.0
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -11,8 +26,8 @@
     <groupId>com.cjh</groupId>
     <artifactId>backProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>backProject</name>
-    <description>Demo project for Spring Boot</description>
+    <name>测盟汇后端项目</name>
+    <description>测盟汇测试技术交流平台后端服务</description>
     <url/>
     <licenses>
         <license/>

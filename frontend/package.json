@@ -1,6 +1,9 @@
 {
-  "name": "hello_vue",
-  "version": "0.0.0",
+  "name": "cemenghui-frontend",
+  "version": "1.0.0",
+  "description": "测盟汇前端管理系统 - 基于Vue3 + TypeScript + Element Plus的现代化管理后台",
+  "author": "Wang Shenjun",
+  "date": "2025.07.12",
   "private": true,
   "type": "module",
   "scripts": {

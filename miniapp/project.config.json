@@ -1,8 +1,15 @@
 {
-  "description": "测盟汇小程序项目配置文件",
+  "description": "测盟汇微信小程序项目配置",
+  "author": "Wang Shenjun",
+  "date": "2025.07.12",
+  "version": "1.0.0",
   "packOptions": {
-    "ignore": [],
-    "include": []
+    "ignore": [
+      {
+        "type": "file",
+        "value": ".eslintrc.js"
+      }
+    ]
   },
   "setting": {
     "urlCheck": false,
@@ -32,7 +39,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "useIsolateContext": false,
+    "useIsolateContext": true,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
@@ -43,10 +50,38 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "3.8.9",
-  "appid": "wx85a9592720735632",
+  "libVersion": "2.19.4",
+  "appid": "your_app_id_here",
   "projectname": "测盟汇小程序",
-  "condition": {},
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "staticServerOptions": {
+    "baseURL": "",
+    "servePath": ""
+  },
+  "isGameTourist": false,
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": []
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

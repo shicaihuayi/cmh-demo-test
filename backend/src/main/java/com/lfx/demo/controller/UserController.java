@@ -1,3 +1,20 @@
+/**
+ * 用户管理控制器
+ * 
+ * 功能说明：
+ * - 用户登录认证（Web端和小程序端）
+ * - 用户注册和验证码发送
+ * - 用户信息管理（增删改查）
+ * - 用户权限控制（基于角色和公司）
+ * - 微信小程序登录集成
+ * - 登录安全防护（防暴力破解）
+ * 
+ * 接口路径：/user
+ * 
+ * @author Wang Shenjun
+ * @date 2025.07.12
+ * @version 1.0.0
+ */
 package com.lfx.demo.controller;
 
 import com.lfx.demo.entity.User;
